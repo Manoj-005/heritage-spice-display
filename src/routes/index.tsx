@@ -4,6 +4,8 @@ import { Phone, MessageCircle, MapPin, Clock, Leaf, Heart, ShieldCheck, Package,
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/hero-spices.jpg";
+import logoAsset from "@/assets/perumal-logo.jpeg.asset.json";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -102,11 +104,17 @@ function Index() {
       {/* Navigation */}
       <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur-sm">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <a href="#home" className="flex items-center gap-2">
+          <a href="#home" className="flex items-center gap-2.5">
+            <img
+              src={logoAsset.url}
+              alt="Lord Venkateswara Perumal — Venkateswara Mills logo"
+              className="h-11 w-11 rounded-full border border-mustard/60 object-cover object-top shadow-sm"
+            />
             <span className="font-serif text-xl font-semibold text-terracotta sm:text-2xl">
               Venkateswara Mills
             </span>
           </a>
+
 
           {/* Desktop Nav */}
           <nav className="hidden items-center gap-1 md:flex">
@@ -416,7 +424,15 @@ function Index() {
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div>
-              <h3 className="font-serif text-2xl font-semibold text-cream">Venkateswara Mills</h3>
+              <div className="flex items-center gap-3">
+                <img
+                  src={logoAsset.url}
+                  alt="Lord Venkateswara Perumal — Venkateswara Mills logo"
+                  className="h-12 w-12 rounded-full border border-mustard/50 object-cover object-top"
+                />
+                <h3 className="font-serif text-2xl font-semibold text-cream">Venkateswara Mills</h3>
+              </div>
+
               <p className="mt-3 max-w-xs text-sm leading-relaxed text-cream/70">
                 Authentic homemade South Indian spice powders. Pure, preservative-free, and traditionally made.
               </p>
