@@ -424,7 +424,15 @@ function Index() {
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div>
-              <h3 className="font-serif text-2xl font-semibold text-cream">Venkateswara Mills</h3>
+              <div className="flex items-center gap-3">
+                <img
+                  src={logoAsset.url}
+                  alt="Lord Venkateswara Perumal — Venkateswara Mills logo"
+                  className="h-12 w-12 rounded-full border border-mustard/50 object-cover object-top"
+                />
+                <h3 className="font-serif text-2xl font-semibold text-cream">Venkateswara Mills</h3>
+              </div>
+
               <p className="mt-3 max-w-xs text-sm leading-relaxed text-cream/70">
                 Authentic homemade South Indian spice powders. Pure, preservative-free, and traditionally made.
               </p>
