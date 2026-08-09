@@ -4,6 +4,8 @@ import { Phone, MessageCircle, MapPin, Clock, Leaf, Heart, ShieldCheck, Package,
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/hero-spices.jpg";
+import logoAsset from "@/assets/perumal-logo.jpeg.asset.json";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -102,11 +104,17 @@ function Index() {
       {/* Navigation */}
       <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur-sm">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <a href="#home" className="flex items-center gap-2">
+          <a href="#home" className="flex items-center gap-2.5">
+            <img
+              src={logoAsset.url}
+              alt="Lord Venkateswara Perumal — Venkateswara Mills logo"
+              className="h-11 w-11 rounded-full border border-mustard/60 object-cover object-top shadow-sm"
+            />
             <span className="font-serif text-xl font-semibold text-terracotta sm:text-2xl">
               Venkateswara Mills
             </span>
           </a>
+
 
           {/* Desktop Nav */}
           <nav className="hidden items-center gap-1 md:flex">
