@@ -224,18 +224,41 @@ function Index() {
 
       {/* About Section */}
       <section id="about" className="bg-cream px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
-          <span className="text-sm font-semibold uppercase tracking-wider text-terracotta">About Us</span>
-          <h2 className="mt-3 font-serif text-3xl font-bold text-foreground sm:text-4xl">
-            Tradition, Taste & Trust
-          </h2>
-          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Venkateswara Mills is a trusted, home-style maker of pure South Indian spice powders. With over{" "}
-            <strong className="text-foreground">15 years of experience</strong>, we continue to serve our customers
-            with authentic taste and uncompromising quality. Every batch is prepared using traditional homemade
-            recipes, roasted and ground in small quantities to preserve freshness. We believe in keeping it pure —
-            <strong className="text-foreground"> no preservatives, no artificial colors, no shortcuts</strong>.
-          </p>
+        <div className="mx-auto max-w-5xl">
+          <div className="text-center">
+            <span className="text-sm font-semibold uppercase tracking-wider text-terracotta">About Us</span>
+            <h2 className="mt-3 font-serif text-3xl font-bold text-foreground sm:text-4xl">
+              Tradition, Taste & Trust
+            </h2>
+          </div>
+
+          <div className="mt-10 grid items-center gap-10 lg:grid-cols-2">
+            <div className="order-2 lg:order-1">
+              <p className="text-lg leading-relaxed text-muted-foreground">
+                Venkateswara Mills is a trusted, home-style maker of pure South Indian spice powders. With over{" "}
+                <strong className="text-foreground">15 years of experience</strong>, we continue to serve our
+                customers with authentic taste and uncompromising quality. Every batch is prepared using traditional
+                homemade recipes, roasted and ground in small quantities to preserve freshness. We believe in keeping
+                it pure —
+                <strong className="text-foreground"> no preservatives, no artificial colors, no shortcuts</strong>.
+              </p>
+            </div>
+
+            <div className="order-1 flex flex-col items-center lg:order-2">
+              <div className="relative">
+                <div className="absolute -inset-2 rounded-full bg-terracotta/10" />
+                <img
+                  src={ownerAsset.url}
+                  alt="Vinayaga Moorthy, founder of Venkateswara Mills"
+                  className="relative h-56 w-56 rounded-full border-4 border-cream object-cover shadow-lg sm:h-64 sm:w-64"
+                  width={400}
+                  height={400}
+                />
+              </div>
+              <h3 className="mt-5 font-serif text-xl font-semibold text-foreground">Vinayaga Moorthy</h3>
+              <p className="text-sm font-medium text-terracotta">Founder & Proprietor</p>
+            </div>
+          </div>
         </div>
       </section>
 
