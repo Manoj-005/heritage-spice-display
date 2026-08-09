@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/hero-spices.jpg";
 import logoAsset from "@/assets/perumal-logo.jpeg.asset.json";
+import ownerAsset from "@/assets/owner-vinayaga-moorthy.png.asset.json";
 
 
 export const Route = createFileRoute("/")({
